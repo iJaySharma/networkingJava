@@ -2,12 +2,12 @@
 <b>Overview</b><br>
 This Module describes a very basic one-way Client and Server setup where a Client connects, sends messages to the server and the server shows them using a socket connection. There’s a lot of low-level stuff that needs to happen for these things to work but the Java API networking package (java.net) takes care of all of that, making network programming very easy for programmers.<br>
 <b>Establish a Socket Connection (Client)</b><br>
-To connect to network location (IP Address) and TCP port. The java.net.Socket class represents a Socket. To open a socket: <br>
+To connect to network location (IP Address) and port. The java.net.Socket class represents a Socket. To open a socket: <br>
 
 Socket socket = new Socket(“127.0.0.1/localhost”, 5500)
 <ul>
 <li>The first argument – IP address of Server. ( 127.0.0.1  is the IP address of localhost, where code will run on the single stand-alone machine).</li>
-  <li>The second argument – TCP Port. (Just a number representing which application to run on a server. For example, HTTP runs on port 80. Port number can be from 0 to 65535)</li>
+  <li>The second argument – Port. (Just a number representing which application to run on a server. For example, HTTP runs on port 80. Port number can be from 0 to 65535)</li>
 </ul>
 <b>Communication </b><br>
 To communicate over a socket connection, streams are used to both input and output the data.<br>
